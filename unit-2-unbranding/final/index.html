@@ -6,10 +6,170 @@
 	About this page:
 
 	-->
-	<title>Unbranding</title>
+	<title>Unbranding IKEA</title>
 	
+	<style>
+	body {
+		background-color: #191B35;
+		font-family:Montserrat, Tahoma,
+		sans-serif;
+		text-align:left;
+		font-size:28px;
+		color:white;
+		margin-left:10px;
+		margin-right:100px;
+		margin-top:10px;
+	}
+
+
+	#logo {
+		width:200px;
+		height:50.6px;
+		align-content:left;
+		float:left;
+		background-image:url(assets/logo.png);
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		margin-top:45px;
+		margin-bottom:50px;
+		margin-left:70px;
+	}
+
+    #fakebuttons {
+    	color:white;
+    	float:right;
+    	margin-right:50px;
+    	font-size:15px;
+    	margin-top:15px;
+    	margin-bottom:50px;
+    	word-spacing:20px;
+    }
+
+	#everything {
+		width:300px;
+		height:300px;
+		margin-top: 120px;
+		margin-bottom: 80px;
+		margin-right: auto;
+		margin-left: auto;
+		background-image:url(assets/wrench.png);
+	}
+
+	#bigtext { 
+		margin-top: 280px;
+		margin-bottom: 80px;
+		margin-right: auto;
+		margin-left: -80px;
+		float:left;
+	}
+
+	#phoneimg {
+		float:right;
+		width:350.9px;
+		height:600px;
+		background-image:url(assets/phoneimg.png);
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		margin-right:150px;
+		margin-top:50px;
+	}
+
+	#rotatorembed {
+		background:#30324A;
+	    border-color:#5E5F71;
+		border-radius:50px;
+		border-width:6px;
+		width:500px;
+		height:60px;
+		text-align:left;
+		font-size:25px;
+		padding-left:30px;
+		padding-top:30px;
+		padding-right:40px;
+		font-family:Helvetica
+	}
+
+	/*#everything:hover {
+		cursor:pointer;
+		background-image:url(assets/clock.png);
+	}*/
+
+	.bitcoin{ color:#FFBD59 }
+
+	.bitcoin2{ 
+		color:#FFBD59; 
+		text-align:right;
+		float:right;
+		margin-right:5px
+		}
+	</style>
 </head>
 <body>
-	<h1>Hello, world!</h1>
+	<div id="logo">
+	</div>
+	<div id="fakebuttons">
+		<span class="bitcoin">Home</span>       Merch      Help     Explore  <img src="assets/probutton.png" alt="Pro Button" style=width=120px height=120px align=center title="BUY IT NOW, PIG.">
+	</div>
+
+	<div id="bigtext">
+	<h1>Step Up Your Game - <br>Unlock A New Way Of<br> <span class="bitcoin">Collecting!</span></h1>
+	<div id="rotatorembed"><b>Explore Prices In: <span class="bitcoin2">Pokemon</span></b></div>
+	<br><img src="assets/appstore.png" alt="App Store" style=width=50px height=50px float=center><img src="assets/googlestore.png" alt="Google Play Store" style=width=50px height=50px float=center>
+	<!-- I try my best to try new things but I was not figuring out that rotating text stuff they have on the original site so I just kept it at Pokemon -->
+</div>
+<div id="phoneimg">
+	</div>
+	<script type="text/javascript">
+		let targetElement = document.querySelector("#phoneimg");
+
+		targetElement.addEventListener("mouseover", function () {
+			this.style.backgroundImage = "url(assets/phonetroll.png)";
+		})
+
+		targetElement.addEventListener("mouseout", function () {
+			this.style.backgroundImage = "url(assets/phoneimg.png)";
+		})
+</script>
+<script>
+		let targetElement2 = document.querySelector("h1");
+
+		targetElement2.addEventListener("mouseover", function () {
+			this.innerHTML = "Sorry Kids, We're <br> Making Your Toys... <br> <span class=bitcoin>Into The New Bitcoin!</span>"
+		})
+
+		targetElement2.addEventListener("mouseout", function () {
+			this.innerHTML = "Step Up Your Game - <br>Unlock A New Way Of<br> <span class=bitcoin>Collecting!</span>"
+		})
+</script>
+	
+	<script>
+		let targetElement3 = document.querySelector("#rotatorembed");
+
+		targetElement3.addEventListener("mouseover", function () {
+			this.innerHTML = "<b>Explode Prices In: <span class=bitcoin2>Pokemon</span></b>"
+			this.style = "cursor: pointer";
+		})
+
+		targetElement3.addEventListener("mouseout", function () {
+			this.innerHTML = "<b>Explore Prices In: <span class=bitcoin2>Pokemon</span></b>"
+		})
+
+</script>
+
+<script type="text/javascript">
+		let targetElement4 = document.querySelector("#logo");
+
+		targetElement4.addEventListener("mouseover", function () {
+			this.style.backgroundImage = "url(assets/logo2.png)";
+		})
+
+		targetElement4.addEventListener("mouseout", function () {
+			this.style.backgroundImage = "url(assets/logo.png)";
+		})
+</script>
+<!-- I don't have the resources to replicate the logo's font since I think it's very specific, so I decided to go in the complete other direction and make it intentionally awful -->
+<!-- Statement: I really hate the Pokemon cards trend. Like, I think it's cool that people like Pokemon cards, but people are scalping them and using them as gambling currency and it's become unfathomably lame to me. Around Christmas time I went to GameStop while shopping, and there was this older woman who I'm assuming was buying a gift for her kid, and I heard her sigh and say "Oh my god. These cards are so expensive!" and it pissed me off on her behalf. 
+
+People are scalping the hell out of these cards and blowing the prices up to an absurd degree, and these once-affordable childhood staples are going for 30 dollars a pop. As someone who grew up with Pokemon cards, seeing what's happened to them is really lame to me, and I hate that they're becoming inaccessible to actual children because of the new obsession. So I found the first card-collection site I could, and decided I wanted to use it as a vehicle to make fun of Pokemon scalping in general. -->
 </body>
 </html>
