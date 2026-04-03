@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<!-- The style here is really bland, I know -- I spent most of my energy and resources figuring out the form field, and decided that it didn't need to be super exciting, as it's just a test report. I decided to have the usability test off to the side. I couldn't figure out why the labels didn't work the way the reading said it would, since I integrated it pretty much exactly like it requested, but I think it looks fine. I decided to separate my images from the table in the interest of preserving space, and otherwise went for a pretty simple layout. -->
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+
+		:root {
+			
+		}
+	body {
+		font-family:Arial;
+	}
+
+	.title {
+		font-size:2.5rem;
+		padding-top:1rem;
+	}
+
+	.blocktest {
+		font-size:1.25rem;
+		text-align:bottom;
+		padding:0.50rem;
+	}
+
+	.blocktest.box {
+		font-size:1.0rem;
+	}
+
+	.table3 {
+		font-size:0.75rem;
+	}
+
+	.caption { 
+	text-align:center
+ }
+
+	label { font-size:0.8rem; }
+	input { display: block; }
+
+	</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container display:flex">
+		<div class="row">
+		<div class="col-md-12 title">
+			<b>Usability Report</b>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-9 blocktest border-bottom">
+			You are a web-design employee at Temu, trying to improve user experience and accessibility on the digital storefront.
+		</div>
+		<div class="col-md-3 blocktest text-end border-bottom">
+		</div>
+		<div class="row">
+			<div class="col-md-3 blocktest">
+			<b>SUS Test</b>
+			<form action="#" id="myForm">
+			<label for="q1">I think that I would like to use this system frequently</label>
+			<input type="number" class="form-control" value="3" id="q1" min="1" max="5" required>
+			<label for="q2">I found the system unnecessarily complex</label>
+			<input type="number" class="form-control" value="2" id="q2" min="1" max="5" required>
+			<label for="q3">I thought the system was easy to use</label>
+			<input type="number" class="form-control" value="4" id="q3" min="1" max="5" required>
+			<label for="q4">I think that I would need the support of a technical person to use this system</label>
+			<input type="number" class="form-control" value="1" id="q4" min="1" max="5" required>
+			<label for="q5">I found the various functions in the system were well integrated</label>
+			<input type="number" class="form-control" value="4" id="q5" min="1" max="5" required>
+			<label for="q6">I thought there was too much inconsistency in the system</label>
+			<input type="number" class="form-control" value="2" id="q6" min="1" max="5" required>
+			<label for="q7">I would imagine that most people would learn to use this system very quickly</label>
+			<input type="number" class="form-control" value="4" id="q7" min="1" max="5" required>
+			<label for="q8">I found the system very cumbersome to use</label>
+			<input type="number" class="form-control" value="1" id="q8" min="1" max="5" required>
+			<label for="q9">I felt very confident using the system</label>
+			<input type="number" class="form-control" value="4" id="q9" min="1" max="5" required>
+			<label for="q10">I needed to learn a lot of things before I could get going with this system</label>
+			<input type="number" class="form-control" value="2" id="q10" min="1" max="5" required>
+			<button type="submit" class="btn btn-primary">Update Score</button>
+			<input type="number" step="any" class="form control" id="answer">
+			<script src="assets/main.js"></script>
+			</form>
+			</div>
+			<div class="col-md-9 blocktest">
+				<div class="row">
+				<table class="table table-bordered table3 w-100">
+					  <thead>
+					    <tr>
+					      <th scope="col">#</th>
+					      <th scope="col">Task</th>
+					      <th scope="col">Results</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <th scope="row">1</th>
+					      <td>Add a piece of women's clothing with plus-sized options from your Local Warehouse</td>
+					      <td>
+					      	<b>1:30</b> Went immediately to the local warehouse and searched for women’s underwear first due to a miscommunication, then corrected to general clothing and found an item that fit the description given very quickly</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">2</th>
+					      <td>You're really hungry, and you have 90$ in your bank account, and you need a microwave. Find a microwave that's both within your budget (including shipping + tax) and rated 5-stars so you don't blow your house up. 
+					      </td>
+					      <td><b>2:40</b> Used search bar to find microwave, took a bit to find an item that fit all of the requirements, mostly browsed what came up on first search (searched with “microwave”)
+					      </td>
+					    </tr>
+					    <tr>
+					      <th scope="row">3</th>
+					      <td>You bought an item and it hasn't arrived. Contact the support Chatbot about this issue.</td>
+					      <td><b>2:01</b> Did not go to chatbot at first, went to items instead, typed “I have not received my microwave this morning” into the chatbot, got answers that were helpful</td>
+					    </tr>
+					     <tr>
+					      <th scope="row">4</th>
+					      <td>Find a way to return an item.</td>
+					      <td>
+					      	<b>2:00</b> Subject found where to return an item within a minute.
+					      </td>
+					    </tr>
+					     <tr>
+					      <th scope="row">5</th>
+					      <td>You're the same person who had the microwave issue, and you're in search of a job for obvious reasons. You want to apply for Temu's team--find a way to do this.</td>
+					      <td><b>0:59</b> Scanned support area then went back to homepage, seemed unsure where to go for a bit, found “careers” button at bottom of page, was taken to LinkedIn</td>
+					    </tr>
+					  </tbody>
+					</table>
+					<!-- taken from bootstrap repository -->
+			</div>
+			<div class="row blocktest box">
+				<div class="col-md-4">
+				<div class="thumbnail text-center">
+					<img src="assets/01screenshot.png" class="img-fluid" alt="A screenshot of a Temu page where you can purchase a dress. The XL option is selected.">
+				<div class="caption">
+					<b>Test 1:</b> Women's Clothing
+				</div>
+			</a>
+				</div>
+		</div>
+				<div class="col-md-4">
+				<div class="thumbnail">
+					<img src="assets/02screenshot.png" class="img-fluid" alt="A screenshot of a Temu page where you can purchase a microwave">
+				<div class="caption">
+					<b>Test 2:</b> Cheap Microwave
+				</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+			<div class="thumbnail">
+					<img src="assets/03screenshot.png" class="img-fluid" alt="A screenshot of the Chatbot input on Temu">
+				<div class="caption">
+					<b>Test 3:</b> Chat with the Chatbot
+				</div>
+		</div>
+		</div>
+	<div class="row justify-content-center blocktext box">
+		<div class="col-md-4">
+			<div class="thumbnail">
+				<img src="assets/04screenshot.png" class="img-fluid" alt="A screenshot of Temu's returns menu.">
+				<div class="caption">
+					<b>Test 4:</b> Make A Return 
+				</div>
+		</div>
+		</div>
+		<div class="col-md-4">
+			<div class="thumbnail">
+				<img src="assets/05screenshot.png" class="img-fluid" alt="A screenshot of Temu's careers page.">
+				<div class="caption">
+					<b>Test 5:</b> Find A Career
+				</div>
+		</div>
+		</div>
+</div>
+		</div>
+
+</body>
+</html>
