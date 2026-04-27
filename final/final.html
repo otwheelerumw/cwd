@@ -54,6 +54,11 @@ I was on a swim team for a while as a kid, and thought it'd be fun to gather dat
 		font-size:0.8rem;
 	}
 
+	.deepblue {
+		color:#455580;
+		font-size:0.8rem;
+	}
+
 	.bluenoshrink {
 		color:#50727c;
 	}
@@ -76,6 +81,16 @@ I was on a swim team for a while as a kid, and thought it'd be fun to gather dat
      .chartclass {
      	margin-right:0.5rem;
      }
+
+     .gradientone {
+     	background: linear-gradient(to bottom, rgba(233,239,241,0.5), rgba(0,25,73,0.5));
+     	text-align:center;
+     	text-shadow: 0.2rem 0.2rem 5rem #a2b8f2;
+     }
+
+     .fillerimg {
+     	opacity:0;
+     }
 	</style>
 </head>
 <body>
@@ -90,6 +105,8 @@ I was on a swim team for a while as a kid, and thought it'd be fun to gather dat
 </div>
 <div class="row poolrow">
 	<div class="col-12" style="height: 30rem">
+	<img src="assets/guard.png" alt="A glamor shot of the Hayfield Pool on a sunny summer day." class="fillerimg">
+	<!-- This is a trick that will hopefully let the background image be read by screenreaders without compromising the layout -->
 	</div>
 </div>
 <div class="row text-center bg-override poolrow border2">
@@ -102,24 +119,46 @@ I was on a swim team for a while as a kid, and thought it'd be fun to gather dat
 <div class="container">
 <div class="row border2">
 	<div class="col-12 col-md-6 poolcol">
-<p><span style="font-size: 1.3rem;"><span class="label">This is a chart.</span><br>Swim team scoring makes enough sense.<br>The higher above 0, the harder we won the meet.<br>The lower below 0... I can't even bear to say it. <br><span class="blue">I think I was part of the Swim Team from roughly 2014 to 2018. One year I stopped, and chose instead to do Dive. I always preferred Dive, but I was never great at it. I got up to a "one and a half"--that's a flip that turns into a dive--and I think I had a crush on one of the coaches.<br>Then, COVID happened and I never went back. It was too late. They offered teams in my age group, I just never felt like I was up to it again. I miss diving.</span></p></span>
+<!-- thank you https://stackoverflow.com/a/74138154 -->
+<p class="text-center text-md-start"><span style="font-size: 1.3rem;"><span class="label">This is a chart.</span><br>Swim team scoring makes enough sense.<br>The higher above 0, the harder we won the meet.<br>The lower below 0... I can't even bear to say it. <br><span class="blue">I think I was part of the Swim Team from roughly 2014 to 2018. One year I stopped, and chose instead to do Dive. I always preferred Dive, but I was never great at it. I got up to a "one and a half"--that's a flip that turns into a dive--and I think I had a crush on one of the coaches.<br>Then, COVID happened and I never went back. It was too late. They offered teams in my age group, I just never felt like I was up to it again. I miss diving.</span></p></span>
 	</div>
 	<div class="col-12 col-md-6 poolcol">
-	<div class="flourish-embed flourish-chart" data-src="visualisation/28632778"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28632778/thumbnail" width="50%" alt="chart visualization" /></noscript></div>
+	<div class="flourish-embed flourish-chart" data-src="visualisation/28632778"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28632778/thumbnail" width="50%" alt="Bar chart visualization. An arrangement of Hayfield's scoring in meets between 2010 and 2025."/></noscript></div>
 </div>
 <div class="row border">
 <div class="col-12 col-md-6 poolcol">
-	<i><p style="text-align:center;">Damn... did we kind of suck?</p></i><div class="flourish-embed flourish-hierarchy" data-src="visualisation/28671506"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28671506/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div><br>
+	<i><p style="text-align:center;">Damn... did we kind of suck?</p></i><div class="flourish-embed flourish-hierarchy" data-src="visualisation/28671506"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28671506/thumbnail" width="100%" alt="hierarchy visualization. hayfield has 30 wins, 40 losses, and 4 draws" /></noscript></div><br>
 </div>
 <div class="col-12 col-md-6 poolcol">
-<p style="text-align:right;"><span style="font-size: 1.3rem;"><span class="label">I mean, it's alright...</span><br></span>43% win-rate isn't bad, I guess. The Seahawks are a perfectly acceptable and quite possibly average member of the Northern Virginia Swimming League. You know, interestingly, they didn't even lose *once* in 2025. I'm proud!<br><span class="blue">It's a weird feeling leaving something behind entirely. It's a worse feeling when the new generation of tyke swimmers are better than you were. My contemporaries and I are gone and *now* they pick up the pace? Come on! We were pretty fast 10 year olds. If I thought about swimming more than once every few months, I might even be offended.</p></span>
+<p class="text-center text-md-start"><span style="font-size: 1.3rem;"><span class="label text-center">I mean, it's alright...</span><br></span>43% win-rate isn't bad, I guess. The Seahawks are a perfectly acceptable and quite possibly average member of the Northern Virginia Swimming League. You know, interestingly, they didn't even lose *once* in 2025. I'm proud!<br><span class="blue">It's a weird feeling leaving something behind entirely. It's a worse feeling when the new generation of tyke swimmers are better than you were. My contemporaries and I are gone and *now* they pick up the pace? Come on! We were pretty fast 10 year olds. If I thought about swimming more than once every few months, I might even be offended.</span></p>
 </div>
 </span>
 </p>
-<div class="row">
+<div class="row g-0">
 	<div class="col-12 col-md-6 poolcol">
-	<p><span style="font-size: 1.3rem;"><span class="label">These are our nemeses.</span><br></span>The bigger the box in each category, the more they won or lost against them. For example, the Seahawks won against the clunkily named Truro Homes Association three times, lost three times, and tied once. So you could call them rivals.<br><span class="blue">I never really processed the different swim teams. They all sort of blended together into a composite "enemy team" to me, with a bunch of weird kids I didn't recognize. I mainly differentiated them based on how annoying the drive was to get there. One of the places had this insane hill to the side of it that made it completely impossible to get basically anywhere. Another had a much larger and nicer bathroom than ours. I was jealous of this until I ended up working at the Hayfield Pool as a teenager, and they made us clean the bathrooms daily. That made me appreciate our pitiful restroom a little bit more. 
+	<p class="text-center text-md-start"><span style="font-size: 1.3rem;"><span class="label">These are their nemeses.</span><br></span>The bigger the box in each category, the more they won or lost against them. For example, the Seahawks won against the clunkily named Truro Homes Association three times, lost three times, and tied once. So you could call them rivals.<br><span class="blue">I never really processed the different swim teams. They all sort of blended together into a composite "enemy team" to me, with a bunch of weird kids I didn't recognize. I mainly differentiated them based on how annoying the drive was to get there. One of the places had this insane hill to the side of it that made it completely impossible to get basically anywhere. Another had a much larger and nicer bathroom than ours. I was jealous of this until I ended up working at the Hayfield Pool as a teenager, and they made us clean the bathrooms daily. That made me appreciate our pitiful restroom a little bit more.</span></p>
 	</div>
 	<div class="col-12 col-md-6 poolcol">
-		<div class="flourish-embed flourish-hierarchy" data-src="visualisation/28687716"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28687716/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
+		<div class="flourish-embed flourish-hierarchy" data-src="visualisation/28687716"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28687716/thumbnail" width="80%" alt="Hierarchy visualization, naming a number of Hayfield's opponents." /></noscript></div>
 	</div>
+</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+</p>
+</div>
+</div>
+</div>
+<!-- I have no idea where all those divs came from I can't lie -->
+
+	<div class="gradientone">
+	<div class="container-fluid">
+		<div class="row poolrow">
+			<div class="col-12 col-md-12 poolcol">
+		<p><span class="deepblue">I don't know what I expected to get from all of this.<br>As I expected, we lost. A lot. I just feel a certain urge to prove to myself that<br>childhood me was... successful? Meaningful? Anything greater than average? <br>I mean, I always kind of hated swim meets. Home meets were fine, I guess. <br>Away meets were annoying. Whisking me away to some strange alternative pool, at some ungodly hour.<br>NOVA isn't that big, necessarily, but it's so congested that it took forever to get there anyways.<br>It was soggy and gross. And doing the backstroke scared the shit out of me.<br>They'd arrange us kids into this slapped-together queue system, where they'd have us under a tent, bunched together on these flimsy benches. <br>It sucked and took forever. There had to have been a more efficient way of doing it.<br>Sometimes you'd get sat near a real annoying kid and it'd get unbearable.<br>Admittedly, I was probably the annoying kid for the others, but that's okay.<br>These days, I haven't swam for over a year. <br>God.<br>I really haven't swam for over a year.<br>It used to be a huge part of my life, and it really doesn't feel that way. When I worked as a lifeguard, <br> my nominatively-determined coworker, Fin, who didn't play about swimming, referred to us as "poolrats".<br>We didn't grow up "together", but we grew up around each other, constantly.<br>Now, being at a pool makes me feel weird. It's strange, as a kid I always longed for<br>when I was old enough to be in the pool during adult swim, but<br>once I became that age I just wasn't in that world anymore.<br>I'm moving out soon. My parents might be, too.<br>Hayfield is a "private" swim club, so after we're gone, we lose our membership.<br>It's weird to think about. I don't know if I'll ever feel that water again.<br>My baptism was chlorinated. See you later, Swim Club.</p></span-water>
+	</div>
+	</div>
+</div>
+</div>
